@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import { BrowserRouter as Router } from 'react-router-dom';
+import { HomeScreen } from "./Screens/Home";
 import App from "./App";
 import { Login } from "./Login.web";
 import LayoutWeb from "./layout/Layout.web";
@@ -10,9 +10,14 @@ import UserInfo from "./Cards/UserInfo";
 import OrgInfo from "./Cards/OrgInfo";
 import Activity from "./Cards/Activity";
 import Achievements from "./Cards/Achievements";
+// import { BrowserRouter as Router } from 'react-router-dom';
+import './index.css'
 
 ReactDOM.render(
-  <Box width={"100%"} height={"100%"} display="flex" flexDirection={"column"}>
+  <div>
+    <p className="bg-red-400 text-green-400">TEST</p>
+    {/* <HomeScreen /> */}
+    {/* <Box width={"100%"} height={"100%"} display="flex" flexDirection={"column"}>
     <LayoutWeb>
       <UserProfile />
       <UserInfo />
@@ -20,7 +25,8 @@ ReactDOM.render(
       <Activity />
       <Achievements />
     </LayoutWeb>
-  </Box>,
+  </Box> */}
+  </div>,
   document.getElementById("root")
 );
 
